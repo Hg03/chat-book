@@ -10,5 +10,5 @@ import os
 from markdownlit import mdlit
 
 st.set_page_config(layout='wide',page_icon='📟',page_title='Chatbook')
-mdlit('Chat - [blue]book[/blue] ✉️ 🔥')
+mdlit('# Chat - [blue]book[/blue] ✉️ 🔥')
 
