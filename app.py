@@ -12,3 +12,9 @@ from markdownlit import mdlit
 st.set_page_config(layout='wide',page_icon='📟',page_title='Chatbook')
 mdlit('#Chat - [blue]book[/blue] ✉️ 🔥')
 
+with_or_without = st.selectbox('How do you want your chatbot',['Using your API key','Local Chatbot(without key)'])
+
+if with_or_without is 'Using your API key':
+  open_api_key = st.text_input('Enter your API key',type='Password')
+else:
+  st.info('No key is required ')
