@@ -16,5 +16,5 @@ with_or_without = st.selectbox('How do you want your chatbot',['Using your API k
 
 if with_or_without is 'Using your API key':
   open_api_key = st.text_input('Enter your API key',type='password')
-else:
+elif with_or_without is 'Local Chatbot(without key)':
   st.info('No key is required ')
